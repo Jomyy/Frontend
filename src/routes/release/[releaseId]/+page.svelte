@@ -6,6 +6,7 @@
 	import YoutubeLogo from '$lib/assets/icons/YoutubeLogo.webp';
 	import YTMusicLogo from '$lib/assets/icons/YTMusicLogo.webp';
 	import InstagramLogo from '$lib/assets/icons/InstagramLogo.webp';
+	import { apiURL } from '$lib';
 	/** @type {import('./$types').PageData} */
 	export let data;
 	console.log(data);
@@ -14,7 +15,8 @@
 <div class="flex flex-col">
 	<div class="flex p-8 items-center justify-center flex-col lg:flex-row sm:justify-start">
 		<img
-			src={'http://127.0.0.1:8090/api/files/' +
+			src={apiURL +
+				'files/' +
 				data.release.collectionId +
 				'/' +
 				data.release.id +

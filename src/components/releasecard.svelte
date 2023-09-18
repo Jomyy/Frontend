@@ -1,4 +1,5 @@
 <script>
+	import { apiURL } from '$lib';
 	/**
 	 * @type {{ collectionId: string; id: string; Profilpicture: string; Name: string;}}
 	 */
@@ -8,12 +9,7 @@
 <a href={'/release/' + data.id} class="p-4">
 	<div class="h-max relative">
 		<img
-			src={'http://127.0.0.1:8090/api/files/' +
-				data.collectionId +
-				'/' +
-				data.id +
-				'/' +
-				data.Cover}
+			src={apiURL + 'files/' + data.collectionId + '/' + data.id + '/' + data.Cover}
 			class="aspect-square object-cover w-full drop-shadow-lg"
 			alt="artistprofilepicture"
 		/>

@@ -1,4 +1,5 @@
 <script>
+	import { apiURL } from '$lib';
 	import AmazonMusicLogo from '$lib/assets/icons/AmazonMusicLogo.png';
 	import SpotifyLogo from '$lib/assets/icons/SpotifyLogo.png';
 	import AppleMusicLogo from '$lib/assets/icons/AppleMusicLogo.webp';
@@ -16,7 +17,8 @@
 >
 	<div class="relative">
 		<img
-			src={'http://127.0.0.1:8090/api/files/' +
+			src={apiURL +
+				'files/' +
 				data.artist.collectionId +
 				'/' +
 				data.artist.id +
