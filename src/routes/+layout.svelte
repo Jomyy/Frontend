@@ -41,7 +41,7 @@
 <nav
 	class="bg-black fixed w-screen text-white text-center m-0 p-0 font-sans z-50 md:hidden flex-row"
 >
-	<div class="flex justify-end h-32">
+	<div class="flex justify-end h-24">
 		{#if navOpen}
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -92,5 +92,5 @@
 		</div>
 	{/if}
 </nav>
-<div class="h-32 md:h-16" />
+<div class="h-24 md:h-16" />
 <slot class="bg-neutral-900" />
