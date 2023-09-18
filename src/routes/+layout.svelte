@@ -45,11 +45,11 @@
 		{#if navOpen}
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-			<img src={menucloseicon} class="invert aspect-square p-10" on:click={changeNav} alt="menu" />
+			<img src={menucloseicon} class="invert aspect-square p-4" on:click={changeNav} alt="menu" />
 		{:else}
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-			<img src={hamburgericon} class="invert aspect-square p-10" on:click={changeNav} alt="menu" />
+			<img src={hamburgericon} class="invert aspect-square p-4" on:click={changeNav} alt="menu" />
 		{/if}
 	</div>
 	{#if navOpen}
