@@ -12,6 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@ivorgri/sveltekit-pluggable-static-adapter": "^0.1.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/adapter-vercel": "^3.0.3",
@@ -28,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@ivorgri/sveltekit-pluggable-static-adapter-external-image-plugin": "^1.0.1",
 		"@vercel/analytics": "^1.0.2"
 	}
 }
