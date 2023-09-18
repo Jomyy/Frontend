@@ -35,25 +35,53 @@
 			</h1>
 			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 justify-between items-center">
 				<a href={data.artist.Spotify}
-					><img src={SpotifyLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={SpotifyLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 				<a href={data.artist.Deezer}
-					><img src={DeezerLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={DeezerLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 				<a href={data.artist.Apple}
-					><img src={AppleMusicLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={AppleMusicLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 				<a href={data.artist.YoutubeMusic}
-					><img src={YTMusicLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={YTMusicLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 				<a href={data.artist.Youtube}
-					><img src={YoutubeLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={YoutubeLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 				<a href={data.artist.Amazon}
-					><img src={AmazonMusicLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={AmazonMusicLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 				<a href={data.artist.Instagram}
-					><img src={InstagramLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+					><img
+						src={InstagramLogo}
+						class="aspect-square h-20 p-4 saturate-0 brightness-150"
+						alt="Spotify"
+					/></a
 				>
 			</div>
 		</div>
@@ -72,6 +100,7 @@
 						width="100%"
 						height="352"
 						frameBorder="0"
+						loading="lazy"
 						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 						class="w-full"
 						title="miniplayer"
