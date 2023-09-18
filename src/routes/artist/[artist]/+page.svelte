@@ -1,4 +1,11 @@
 <script>
+	import AmazonMusicLogo from '$lib/assets/icons/AmazonMusicLogo.png';
+	import SpotifyLogo from '$lib/assets/icons/SpotifyLogo.png';
+	import AppleMusicLogo from '$lib/assets/icons/AppleMusicLogo.webp';
+	import DeezerLogo from '$lib/assets/icons/DeezerLogo.png';
+	import YoutubeLogo from '$lib/assets/icons/YoutubeLogo.webp';
+	import YTMusicLogo from '$lib/assets/icons/YTMusicLogo.webp';
+	import InstagramLogo from '$lib/assets/icons/InstagramLogo.webp';
 	/** @type {import('./$types').PageData} */
 	export let data;
 	console.log(data.artist);
@@ -16,22 +23,46 @@
 				'/' +
 				data.artist.Banner}
 			class="absolute -z-20 h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)] w-screen object-cover object-top"
+			alt="artistbanner"
 		/>
 		<div
-			class="h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)] w-screen flex justify-center items-center"
+			class="h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)] w-screen flex justify-center items-center flex-col"
 		>
 			<h1 class="text-4xl text-center text-white text-shadow-lg shadow-black">
 				{data.artist.Name}
 			</h1>
+			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 justify-between items-center">
+				<a href={data.artist.Spotify}
+					><img src={SpotifyLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+				<a href={data.artist.Deezer}
+					><img src={DeezerLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+				<a href={data.artist.Apple}
+					><img src={AppleMusicLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+				<a href={data.artist.YoutubeMusic}
+					><img src={YTMusicLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+				<a href={data.artist.Youtube}
+					><img src={YoutubeLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+				<a href={data.artist.Amazon}
+					><img src={AmazonMusicLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+				<a href={data.artist.Instagram}
+					><img src={InstagramLogo} class="aspect-square h-20 p-4 saturate-0 brightness-150" /></a
+				>
+			</div>
 		</div>
 	</div>
 	<div class=" p-8 text-white">
 		<h1 class="text-4xl text-center text-white p-8 pt-0">Bio</h1>
-		<p class="">{@html data.artist.Bio}</p>
+		<p>{@html data.artist.Bio}</p>
 	</div>
 	<div class=" h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)] p-8 text-white">
 		<h1 class="text-4xl text-center text-white p-8 pt-0">Releases</h1>
-		<div class="w-scren">
+		<div class="grid grid-cols-1 lg:grid-cols-2 p-4">
 			{#each data.artist.expand.Releases as release}
 				<div class="p-8">
 					<iframe
@@ -40,8 +71,8 @@
 						height="352"
 						frameBorder="0"
 						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-						loading="lazy"
 						class="w-full"
+						title="miniplayer"
 					/>
 				</div>
 			{/each}
