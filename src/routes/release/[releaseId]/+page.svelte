@@ -35,8 +35,8 @@
 		</div>
 	</div>
 	<div class=" p-4">
-		<p class="text-white font-sans">Available Now On:</p>
-		<div class="grid grid-cols-2 md:grid-cols-4 justify-center items-center">
+		<p class="text-white font-sans text-center text-2xl pb-4">Available Now On:</p>
+		<div class="grid grid-cols-2 md:grid-cols-4 justify-center items-center justify-items-center">
 			<div class="p-4">
 				<a
 					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
