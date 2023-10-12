@@ -8,7 +8,7 @@ kit: {
 										pages: 'build',
 													assets: 'build',
 															fallback: null,
-																			precompress: false,
+																			precompress: true,
 																			            afterCleanupCallback: async (builder, pages, assets) => {
 																										// Add functions here
 																													},
