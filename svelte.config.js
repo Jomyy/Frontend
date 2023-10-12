@@ -1,7 +1,7 @@
 import adapter from '@ivorgri/sveltekit-pluggable-static-adapter';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 /** @type {import('@sveltejs/kit').Config} */
-config:{
+const config = {
 kit: {
 				adapter: adapter({
 							// default options provided by regular static adapter
