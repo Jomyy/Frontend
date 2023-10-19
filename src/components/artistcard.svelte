@@ -1,4 +1,5 @@
 <script>
+	export const prerender = true;
 	import { apiURL } from '$lib';
 	/**
 	 * @type {{ collectionId: string; id: string; Profilpicture: string; Name: string;}}

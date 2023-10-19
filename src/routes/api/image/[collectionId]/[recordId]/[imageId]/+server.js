@@ -1,3 +1,4 @@
+export const prerender = true
 import { apiURL } from '$lib';
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ params }) {
@@ -5,14 +6,14 @@ export async function GET({ params }) {
     await fetch(apiURL + "files/" + params.collectionId + "/" + params.recordId + "/" + params.imageId).then(function (response) {
         return response.blob();
     }).then(function (myBlob) {
-        var objectURL = URL.createObjectURL(myBlob);
-        url = objectURL;
+
+        url = myBlob;
     });
 
     // @ts-ignore
-    const response = Response.redirect(url);
+    const response = new Response(url);
 
-    //response.headers.append('Access-Control-Allow-Origin', "http://localhost:5173");
+    response.headers.append('Access-Control-Allow-Origin', "http://localhost:5173");
 
 
     return response
