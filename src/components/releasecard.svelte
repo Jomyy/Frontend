@@ -11,7 +11,7 @@
 <a href={'/release/' + data.id} class="p-4">
 	<div class="h-max relative">
 		<img
-			src={'/api/image/' + data.collectionId + '/' + data.id + '/' + data.Cover}
+			src={apiURL + 'files/' + data.collectionId + '/' + data.id + '/' + data.Cover}
 			class="aspect-square object-cover w-full drop-shadow-lg"
 			alt="artistprofilepicture"
 		/>
