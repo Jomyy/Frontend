@@ -9,7 +9,7 @@
 <a href={'/artist/' + data.id}>
 	<div class="h-max relative">
 		<img
-			src={apiURL + 'files/' + data.collectionId + '/' + data.id + '/' + data.Profilpicture}
+			src={'/api/image/' + data.collectionId + '/' + data.id + '/' + data.Profilpicture}
 			class="aspect-square object-cover"
 			alt="artistprofilepicture"
 		/>
