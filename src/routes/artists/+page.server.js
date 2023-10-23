@@ -9,7 +9,7 @@ export const config = {
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
-    const res = await fetch(apiURL + "collections/artists/records")
+    const res = await fetch(apiURL + "collections/artists/records", { cache: "no-cache" })
     const artists = await res.json()
     return { artists }
 
