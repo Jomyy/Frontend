@@ -20,9 +20,10 @@
 		data.release.id +
 		'/' +
 		data.release.Cover}
-	class="fixed filter w-full h-full -z-40"
+	class="fixed w-full h-full -z-40 blur-2xl brightness-[25%]"
+	alt="bg"
 />
-<div class="flex flex-col backdrop-filter backdrop-blur-xl backdrop-brightness-[35%]">
+<div class="flex flex-col">
 	<div class="flex p-8 items-center justify-center flex-col lg:flex-row sm:justify-start">
 		<img
 			src={apiURL +
