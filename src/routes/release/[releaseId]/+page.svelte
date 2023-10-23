@@ -12,7 +12,17 @@
 	console.log(data);
 </script>
 
-<div class="flex flex-col">
+<img
+	src={apiURL +
+		'files/' +
+		data.release.collectionId +
+		'/' +
+		data.release.id +
+		'/' +
+		data.release.Cover}
+	class="fixed filter w-full h-full -z-40"
+/>
+<div class="flex flex-col backdrop-filter backdrop-blur-xl backdrop-brightness-[35%]">
 	<div class="flex p-8 items-center justify-center flex-col lg:flex-row sm:justify-start">
 		<img
 			src={apiURL +
@@ -41,7 +51,7 @@
 		<div class="grid grid-cols-2 md:grid-cols-4 justify-center items-center justify-items-center">
 			<div class="p-4">
 				<a
-					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
+					class="flex flex-col p-8 rounded-xl w-min justify-center items-center aspect-square h-32 bg-black"
 					href={data.release.Spotify}
 					><div class="flex flex-col justify-center items-center">
 						<img src={SpotifyLogo} class="aspect-square h-8 w-8" alt="Spotify" />
@@ -51,7 +61,7 @@
 			</div>
 			<div class="p-4">
 				<a
-					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
+					class="flex flex-col p-8 rounded-xl w-min justify-center items-center aspect-square h-32 bg-black"
 					href={data.release.Apple}
 					><div class="flex flex-col justify-center items-center">
 						<img src={AppleMusicLogo} class="aspect-square h-8 w-8" alt="Apple" />
@@ -61,7 +71,7 @@
 			</div>
 			<div class="p-4">
 				<a
-					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
+					class="flex flex-col p-8 rounded-xl w-min justify-center items-center aspect-square h-32 bg-black"
 					href={data.release.Amazon}
 					><div class="flex flex-col justify-center items-center">
 						<img src={AmazonMusicLogo} class="aspect-square h-8 w-8" alt="Amazon" />
@@ -71,7 +81,7 @@
 			</div>
 			<div class="p-4">
 				<a
-					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
+					class="flex flex-col p-8 rounded-xl w-min justify-center items-center aspect-square h-32 bg-black"
 					href={data.release.Deezer}
 					><div class="flex flex-col justify-center items-center">
 						<img src={DeezerLogo} class="aspect-square h-8 w-8" alt="Deezer" />
@@ -81,7 +91,7 @@
 			</div>
 			<div class="p-4">
 				<a
-					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
+					class="flex flex-col p-8 rounded-xl w-min justify-center items-center aspect-square h-32 bg-black"
 					href={data.release.YoutubeMusic}
 					><div class="flex flex-col justify-center items-center">
 						<img src={YTMusicLogo} class="aspect-square h-8 w-8" alt="YTMusic" />
@@ -91,7 +101,7 @@
 			</div>
 			<div class="p-4">
 				<a
-					class="flex flex-col bg-neutral-950 p-8 rounded-xl w-min justify-center items-center aspect-square h-32"
+					class="flex flex-col p-8 rounded-xl w-min justify-center items-center aspect-square h-32 bg-black"
 					href={data.release.Youtube}
 					><div class="flex flex-col justify-center items-center">
 						<img src={YoutubeLogo} class="aspect-square h-8 w-8" alt="Youtube" />
