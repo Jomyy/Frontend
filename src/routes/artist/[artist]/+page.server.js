@@ -1,10 +1,9 @@
 
 export const config = {
         isr: {
-                expiration: 60,
+                expiration: 10,
 
         },
-        runtime: 'edge',
 }
 import { apiURL } from '$lib';
 /** @type {import('./$types').PageLoad} */
