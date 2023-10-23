@@ -5,7 +5,7 @@ export const config = {
   },
 
 };
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').PageServerLoad} */
 export async function load({ fetch, params }) {
   const res = await fetch(apiURL + "collections/releases/records")
   const releases = await res.json()

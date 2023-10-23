@@ -6,7 +6,7 @@ export const config = {
         },
 }
 import { apiURL } from '$lib';
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').PageServerLoad} */
 export async function load({ fetch, params }) {
 
         const res = await fetch(apiURL + "collections/artists/records/" + params.artist + "?expand=Releases", { cache: "no-cache" })
