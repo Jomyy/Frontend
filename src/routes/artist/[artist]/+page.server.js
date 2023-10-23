@@ -9,7 +9,7 @@ import { apiURL } from '$lib';
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
 
-        const res = await fetch(apiURL + "collections/artists/records/" + params.artist + "?expand=Releases,Releases.Tracks", { cache: "no-cache" })
+        const res = await fetch(apiURL + "collections/artists/records/" + params.artist + "?expand=Releases", { cache: "no-cache" })
         const artist = await res.json()
 
         return { artist }
