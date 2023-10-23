@@ -6,6 +6,7 @@ export const config = {
     expiration: 60,
     bypassToken: 'REPLACE_ME_WITH_SECRET_VALUE',
   },
+  runtime: 'edge',
 };
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
