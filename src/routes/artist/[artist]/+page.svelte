@@ -7,6 +7,7 @@
 	import YoutubeLogo from '$lib/assets/icons/YoutubeLogo.webp';
 	import YTMusicLogo from '$lib/assets/icons/YTMusicLogo.webp';
 	import InstagramLogo from '$lib/assets/icons/InstagramLogo.webp';
+	import Releasecard from '../../../components/releasecard.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
 	console.log(data.artist);
@@ -95,7 +96,8 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 p-2">
 			{#each data.artist.expand.Releases as release}
 				<div class="p-2">
-					<iframe
+					<Releasecard data={release} />
+					<!--<iframe
 						src={release.SpotifyEmbed}
 						width="100%"
 						height="352"
@@ -105,6 +107,7 @@
 						class="w-full"
 						title="miniplayer"
 					/>
+				-->
 				</div>
 			{/each}
 		</div>
