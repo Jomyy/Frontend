@@ -1,5 +1,12 @@
 export const prerender = true;
 export const csr = false;
+export const config = {
+        isr: {
+                expiration: 60,
+                bypassToken: 'REPLACE_ME_WITH_SECRET_VALUE',
+        },
+        runtime: 'edge',
+}
 import { apiURL } from '$lib';
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
