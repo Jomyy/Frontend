@@ -3,7 +3,6 @@ export const prerender = true
 export const config = {
         isr: {
                 expiration: 60,
-                bypassToken: 'REPLACE_ME_WITH_SECRET_VALUE',
         },
         runtime: 'edge',
 }
