@@ -1,11 +1,11 @@
 import { apiURL } from '$lib';
-/*export const config = {
+export const config = {
     isr: {
         expiration: 240
     },
 
-};*/
-/** @type {import('./$types').PageLoad} */
+};
+/** @type {import('./$types').PageServerLoad} */
 export async function load({ fetch, params }) {
     const resRecords = await fetch(apiURL + "collections/releases/records")
     const releases = await resRecords.json()
