@@ -4,7 +4,6 @@
 	import Releasecard from '../components/releasecard.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
-	console.log(data);
 </script>
 
 <div

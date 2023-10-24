@@ -5,7 +5,6 @@
 	let navOpen = false;
 	function changeNav() {
 		navOpen = !navOpen;
-		console.log(navOpen);
 	}
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
