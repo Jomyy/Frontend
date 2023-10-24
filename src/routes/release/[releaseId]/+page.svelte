@@ -36,11 +36,11 @@
 			alt="artistprofilepicture"
 		/>
 		<div
-			class="flex justify-start flex-col items-start p-8 lg:py-0 align-text-bottom lg:self-end font-sans"
+			class="text-center flex justify-center items-center flex-col lg:items-start p-8 lg:py-0 align-text-bottom lg:self-end font-sans"
 		>
-			<p class="text-2xl text-white">{data.release.Name}</p>
+			<p class="text-4xl text-white text-center">{data.release.Name}</p>
 			{#each data.release.expand.Artist as artist}
-				<a href="/artist/{artist.id}" class="text-xl text-gray-400 font-thin underline"
+				<a href="/artist/{artist.id}" class="text-xl text-gray-400 font-thin underline text-center"
 					>{artist.Name}</a
 				>
 			{/each}

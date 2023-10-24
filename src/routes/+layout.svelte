@@ -97,3 +97,7 @@
 </nav>
 <div class="h-24 md:h-16" />
 <slot class="bg-neutral-900" />
+<div class="h-10" />
+<div class="fixed bottom-0 w-screen bg-black h-10 flex items-center justify-center">
+	<a href="/about" class="text-white">About us</a>
+</div>
