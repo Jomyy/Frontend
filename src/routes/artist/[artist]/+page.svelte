@@ -1,11 +1,11 @@
 <script>
 	import { apiURL } from '$lib';
-	import AmazonMusicLogo from '$lib/assets/icons/AmazonMusicLogo.png';
-	import SpotifyLogo from '$lib/assets/icons/SpotifyLogo.png';
-	import AppleMusicLogo from '$lib/assets/icons/AppleMusicLogo.webp';
-	import DeezerLogo from '$lib/assets/icons/DeezerLogo.png';
-	import YoutubeLogo from '$lib/assets/icons/YoutubeLogo.webp';
-	import YTMusicLogo from '$lib/assets/icons/YTMusicLogo.webp';
+	import AmazonMusicLogo from '$lib/assets/icons/amazon.webp';
+	import SpotifyLogo from '$lib/assets/icons/spotify.webp';
+	import AppleMusicLogo from '$lib/assets/icons/apple.webp';
+	import DeezerLogo from '$lib/assets/icons/deezer.webp';
+	import YTMusicLogo from '$lib/assets/icons/yt.webp';
+
 	import InstagramLogo from '$lib/assets/icons/InstagramLogo.webp';
 	import Releasecard from '../../../components/releasecard.svelte';
 	/** @type {import('./$types').PageData} */
@@ -33,7 +33,9 @@
 			<h1 class="text-4xl text-center text-white text-shadow-lg shadow-black">
 				{data.artist.Name}
 			</h1>
-			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 justify-between items-center">
+			<div
+				class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 justify-between items-center rounded-lg drop-shadow-lg"
+			>
 				<a href={data.artist.Spotify}
 					><img
 						src={SpotifyLogo}
@@ -55,16 +57,9 @@
 						alt="Spotify"
 					/></a
 				>
-				<a href={data.artist.YoutubeMusic}
-					><img
-						src={YTMusicLogo}
-						class="aspect-square h-20 p-4 saturate-0 brightness-150"
-						alt="Spotify"
-					/></a
-				>
 				<a href={data.artist.Youtube}
 					><img
-						src={YoutubeLogo}
+						src={YTMusicLogo}
 						class="aspect-square h-20 p-4 saturate-0 brightness-150"
 						alt="Spotify"
 					/></a
@@ -72,13 +67,6 @@
 				<a href={data.artist.Amazon}
 					><img
 						src={AmazonMusicLogo}
-						class="aspect-square h-20 p-4 saturate-0 brightness-150"
-						alt="Spotify"
-					/></a
-				>
-				<a href={data.artist.Instagram}
-					><img
-						src={InstagramLogo}
 						class="aspect-square h-20 p-4 saturate-0 brightness-150"
 						alt="Spotify"
 					/></a
