@@ -93,7 +93,7 @@
 	<div class=" h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)] p-8 text-white">
 		<h1 class="text-4xl text-center text-white p-8 pt-0">Releases</h1>
 		<div class="grid grid-cols-1 lg:grid-cols-4 p-2">
-			{#each data.artist.expand.Releases as release}
+			{#each data.orderedReleases as release}
 				<div class="p-2">
 					<Releasecard data={release} />
 					<!--<iframe
