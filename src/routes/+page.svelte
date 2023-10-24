@@ -8,19 +8,44 @@
 </script>
 
 <div
-	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full"
+	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full blur-2xl brightness-[22%] -z-30"
 />
-<div class="backdrop-blur-2xl backdrop-brightness-[22%]">
-	<h1
-		class="text-white text-center flex items-center justify-center h-[calc(100vh-4rem)] md:h-[calc(100vh-8rem)] text-5xl text-shadow-lg shadow-black"
-	>
+<div class="pt-10">
+	<h1 class="text-white text-center flex items-center justify-center text-5xl z-50">
 		Zu Spät Für Die Welle
 	</h1>
 	<div class="h-10" />
 	<div class="flex flex-col items-center">
-		<h2 class="text-white text-2xl text-shadow-lg shadow-black">Check out our latest release!</h2>
-		<div class="max-w-xl">
+		<h2 class="text-white text-2xl">Our latest release!</h2>
+		<div class="max-w-xl px-14">
 			<Releasecard data={data.newestRelease} />
 		</div>
+		<a href="/releases" class="text-gray-50">See all...</a>
+		<div class="h-3" />
+	</div>
+	<div class="flex flex-col items-center">
+		<h2 class="text-white text-2xl">Upcoming events</h2>
+		<div class="" />
+	</div>
+	<div class="flex flex-col items-center text-white p-10">
+		<h2 class="text-white text-2xl">About us</h2>
+		<div class="h-3" />
+		<div class="max-w-md">
+			<p>
+				We are an independent record label featuring all kinds of alternative music genres, be it
+				new wave, post-punk, or folk-punk.
+			</p>
+			<p>
+				Est. 2023 originally as a first party label for <a href="/artist/wftg0i4y24dkbfy"
+					>Optik SW</a
+				>, <a href="/artist/5ath44igcllx9a9">Jonny</a>,
+				<a href="/artist/et56bawolb95r13">DYNAMIK</a>
+				and
+				<a href="/artist/vipd4yr1j3n88i9">Weather Forecast</a>, we now strive to constantly improve
+				our catalog and discover new artists.
+			</p>
+		</div>
+
+		<div class="" />
 	</div>
 </div>
