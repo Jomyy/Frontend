@@ -24,7 +24,7 @@
 	</div>
 	<div class="flex flex-col items-center">
 		<h2 class="text-white text-2xl">Upcoming events</h2>
-		<div class="" />
+		<div />
 	</div>
 	<div class="flex flex-col items-center text-white p-10">
 		<h2 class="text-white text-2xl">About us</h2>
@@ -45,6 +45,6 @@
 			</p>
 		</div>
 
-		<div class="" />
+		<div />
 	</div>
 </div>
