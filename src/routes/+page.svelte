@@ -6,10 +6,10 @@
 	export let data;
 </script>
 
-<!--<div
+<div
 	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full blur-2xl brightness-[22%] -z-30"
 />
--->
+
 <div class="pt-10">
 	<h1 class="text-white text-center flex items-center justify-center text-5xl z-50">
 		Zu Spät Für Die Welle
