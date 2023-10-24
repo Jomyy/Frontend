@@ -5,8 +5,6 @@
 	import AppleMusicLogo from '$lib/assets/icons/apple.webp';
 	import DeezerLogo from '$lib/assets/icons/deezer.webp';
 	import YTMusicLogo from '$lib/assets/icons/yt.webp';
-
-	import InstagramLogo from '$lib/assets/icons/InstagramLogo.webp';
 	import Releasecard from '../../../components/releasecard.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data;
