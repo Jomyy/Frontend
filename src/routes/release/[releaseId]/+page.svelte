@@ -11,6 +11,20 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<meta property="og:title" content={data.release.Name} />
+	<meta
+		property="og:image"
+		content={apiURL +
+			'files/' +
+			data.release.collectionId +
+			'/' +
+			data.release.id +
+			'/' +
+			data.release.Cover}
+	/>
+</svelte:head>
+
 <img
 	src={apiURL +
 		'files/' +
