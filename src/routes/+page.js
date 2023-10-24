@@ -5,7 +5,7 @@ import { apiURL } from '$lib';
     },
 
 };*/
-/** @type {import('./$types').PageServerLoad} */
+/** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
     const resRecords = await fetch(apiURL + "collections/releases/records")
     const releases = await resRecords.json()
