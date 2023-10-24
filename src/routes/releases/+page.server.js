@@ -14,7 +14,7 @@ export async function load({ fetch, params }) {
     // to get a value that is either negative, positive, or zero.
     return b.Date - a.Date;
   })
-  return orderedReleases
+  return {orderedReleases}
 
 
 }
