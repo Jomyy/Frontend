@@ -11,6 +11,7 @@ export const config = {
 export async function load({ fetch, params }) {
     const res = await fetch(apiURL + "collections/artists/records", { cache: "no-cache" })
     const artists = await res.json()
+    console.log(res)
     return { artists }
 
 
