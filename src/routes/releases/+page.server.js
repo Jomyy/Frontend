@@ -1,7 +1,7 @@
 import { apiURL } from '$lib';
 export const config = {
   isr: {
-    expiration: 60
+    expiration: 240
   },
 
 };
