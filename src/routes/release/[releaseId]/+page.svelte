@@ -54,7 +54,7 @@
 			alt="artistprofilepicture"
 		/>
 		<div
-			class="text-center flex justify-center items-center flex-col lg:items-start p-8 lg:py-0 align-text-bottom lg:self-end font-sans"
+			class=" flex justify-center items-center flex-col lg:items-start p-8 lg:py-0 align-text-bottom lg:self-end font-sans"
 		>
 			<p class="text-4xl text-white font-bold">{data.release.Name}</p>
 			{#each data.release.expand.Artist as artist}

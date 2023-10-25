@@ -25,7 +25,7 @@
 		<input name="subject" placeholder="Subject" required class="text-black" />
 		<div class="h-2" />
 
-		<textarea name="message" placeholder="Your Message" required class="text-black" />
+		<textarea name="message" placeholder="Your Message" required class="text-black h-full" />
 		<div class="h-2" />
 		<input type="text" name="honeypot" style="display:none" />
 		<input type="hidden" name="accessKey" value="4ce00c4e-cffa-43e1-81a0-15118caeb705" />
