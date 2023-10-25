@@ -6,6 +6,13 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Home</title>
+	<meta
+		name="description"
+		content="Welcome to the homepage of Zu Spät Für Die Welle Records, Here You can find our newest release and events"
+	/>
+</svelte:head>
 <div
 	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full blur-2xl brightness-[22%] -z-30"
 />

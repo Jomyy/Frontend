@@ -6,10 +6,18 @@
 	import DeezerLogo from '$lib/assets/icons/deezer.webp';
 	import YTMusicLogo from '$lib/assets/icons/yt.webp';
 	import Releasecard from '../../../components/releasecard.svelte';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
 </script>
 
+<svelte:head>
+	<title>{data.artist.Name}</title>
+	<meta
+		name="description"
+		content="Homepage of {data.artist.Name} search through linsk and more!"
+	/>
+</svelte:head>
 <div
 	class="w-screen justify-center items-center grid grid-flow-row-dense h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)]"
 >

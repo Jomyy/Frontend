@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Contact</title>
+	<meta name="description" content="Zu Spät für die Welle contact form and information" />
+</svelte:head>
 <div class="flex w-full pt-10 text-white flex-col md:flex-row">
 	<div class="flex flex-col justify-center items-center w-full p-10">
 		<h1 class="text-3xl">Contact</h1>

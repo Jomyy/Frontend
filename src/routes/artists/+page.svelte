@@ -5,6 +5,13 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Artists</title>
+	<meta
+		name="description"
+		content="Browse Through the catalog of artists in Zu Spät Für Die Welle"
+	/>
+</svelte:head>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4">
 	{#each data.artists.items as artist}
 		<Artistcard data={artist} />
