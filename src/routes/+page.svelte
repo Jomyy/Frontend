@@ -18,10 +18,6 @@
 />
 
 <div class="pt-10">
-	<h1 class="text-white text-center flex items-center justify-center text-5xl z-50">
-		Zu Spät Für Die Welle
-	</h1>
-	<div class="h-10" />
 	<div class="flex flex-col items-center">
 		<h2 class="text-white text-2xl">Our latest release!</h2>
 		<div class="max-w-xl px-14">
