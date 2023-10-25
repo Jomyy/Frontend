@@ -25,7 +25,7 @@
 	<title>{data.release.Name}</title>
 	<meta
 		name="description"
-		content="Sharelinks for {data.release.Name} by {data.release.expand.Artist[0]}"
+		content="Sharelinks for {data.release.Name} by {data.release.expand.Artist[0].Name}"
 	/>
 </svelte:head>
 
