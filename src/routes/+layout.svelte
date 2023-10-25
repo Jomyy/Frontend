@@ -11,6 +11,9 @@
 	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
+<div
+	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full blur-2xl brightness-[22%] -z-30"
+/>
 <nav
 	class="bg-black fixed w-screen text-white text-center h-16 m-0 p-0 font-sans z-50 hidden md:flex no-underline"
 >
@@ -98,5 +101,5 @@
 <slot class="bg-neutral-900" />
 <div class="h-10" />
 <div class="fixed bottom-0 w-screen bg-black h-10 flex items-center justify-center">
-	<a href="/about" class="text-white">About us</a>
+	<a href="/about" class="text-white">About this site</a>
 </div>
