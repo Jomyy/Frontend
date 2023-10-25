@@ -65,7 +65,7 @@
 		</div>
 	</div>
 	<div class=" p-4">
-		<p class="text-white font-sans text-center text-2xl pb-4">Available Now On:</p>
+		<p class="text-white font-sans text-center text-2xl pb-4 font-bold">Available Now On:</p>
 		<div
 			class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-center items-center justify-items-center"
 		>

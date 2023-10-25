@@ -15,7 +15,7 @@
 	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full blur-2xl brightness-[22%] -z-30"
 />
 <nav
-	class="bg-black fixed w-screen text-white text-center h-16 m-0 p-0 font-sans z-50 hidden md:flex no-underline"
+	class="bg-black fixed w-screen text-white text-center h-16 m-0 p-0 font-sans z-50 hidden md:flex no-underline font-thin"
 >
 	<ul class="list-none flex flex-row h-16 w-screen align-middle m-0 p-0 justify-evenly">
 		<li class="w-full h-full">
@@ -44,54 +44,64 @@
 	</ul>
 </nav>
 <nav
-	class="bg-black fixed w-screen text-white text-center m-0 p-0 font-sans z-50 md:hidden flex-row"
+	class="bg-black fixed w-screen text-white text-center m-0 p-0 font-thin z-50 md:hidden flex-row"
 >
-	<div class="flex justify-end h-24">
-		{#if navOpen}
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-			<img
-				src={menucloseicon}
-				class="invert aspect-square h-full p-7"
-				on:click={changeNav}
-				alt="menu"
-			/>
-		{:else}
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-			<img
-				src={hamburgericon}
-				class="invert aspect-square h-full p-7"
-				on:click={changeNav}
-				alt="menu"
-			/>
-		{/if}
+	<div class="flex w-full">
+		<div
+			class="w-screen fixed flex justify-center items-center h-24 font-bold text-2xl text-center"
+		>
+			Die Welle
+		</div>
+		<div class="flex justify-end h-24 w-full">
+			{#if navOpen}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+				<img
+					src={menucloseicon}
+					class="invert aspect-square h-full p-7"
+					on:click={changeNav}
+					alt="menu"
+				/>
+			{:else}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+				<img
+					src={hamburgericon}
+					class="invert aspect-square h-full p-7"
+					on:click={changeNav}
+					alt="menu"
+				/>
+			{/if}
+		</div>
 	</div>
+
 	{#if navOpen}
 		<div class="list-none flex flex-col h-full w-screen text-2xl">
 			<div class="w-screen flex items-center">
-				<a href="/" class="flex justify-center items-center w-full h-full p-8" on:click={changeNav}
-					>Home</a
+				<a
+					href="/"
+					class="flex justify-center items-center w-full h-full p-8 no-underline"
+					on:click={changeNav}>Home</a
 				>
 			</div>
 
 			<div class="w-screen flex items-center">
 				<a
-					class="flex justify-center items-center w-full h-full p-8"
+					class="flex justify-center items-center w-full h-full p-8 no-underline"
 					href="/artists"
 					on:click={changeNav}>Artists</a
 				>
 			</div>
 			<div class="w-screen flex items-center">
 				<a
-					class="flex justify-center items-center w-full h-full p-8"
+					class="flex justify-center items-center w-full h-full p-8 no-underline"
 					href="/releases"
 					on:click={changeNav}>Releases</a
 				>
 			</div>
 			<div class="w-screen flex items-center">
 				<a
-					class="flex justify-center items-center w-full h-full p-8"
+					class="flex justify-center items-center w-full h-full p-8 no-underline"
 					href="/events"
 					on:click={changeNav}>Events</a
 				>
@@ -99,7 +109,7 @@
 
 			<div class="w-screen flex items-center">
 				<a
-					class="flex justify-center items-center w-full h-full p-8"
+					class="flex justify-center items-center w-full h-full p-8 no-underline"
 					href="/contact"
 					on:click={changeNav}>Contact</a
 				>
