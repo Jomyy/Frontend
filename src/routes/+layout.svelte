@@ -50,7 +50,7 @@
 		<div
 			class="w-screen fixed flex justify-center items-center h-24 font-bold text-2xl text-center"
 		>
-			Die Welle
+			Zu Spät Für Die Welle
 		</div>
 		<div class="flex justify-end h-24 w-full">
 			{#if navOpen}
