@@ -32,7 +32,7 @@
 		data.release.id +
 		'/' +
 		data.release.Cover}
-	class="fixed w-full h-full -z-40 blur-2xl brightness-[25%]"
+	class="fixed w-full h-full -z-20 blur-2xl brightness-[25%]"
 	alt="bg"
 />
 <div class="flex flex-col">
