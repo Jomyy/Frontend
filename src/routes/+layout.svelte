@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-full h-full blur-2xl brightness-[22%] -z-30"
+	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-screen h-screen blur-2xl brightness-[22%] -z-30"
 />
 <nav
 	class="bg-black fixed w-screen text-white text-center h-16 m-0 p-0 font-sans z-50 hidden md:flex no-underline font-thin"
