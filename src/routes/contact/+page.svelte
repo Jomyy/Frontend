@@ -10,7 +10,6 @@
 		<br />
 		<p>General Inquiries</p>
 		<a href="info@die-welle.site">info@die-welle.site</a>
-		<a href="demos@die-welle.site">demos@die-welle.site</a>
 	</div>
 	<form
 		action="https://api.staticforms.xyz/submit"
@@ -31,7 +30,7 @@
 		<input type="hidden" name="accessKey" value="4ce00c4e-cffa-43e1-81a0-15118caeb705" />
 
 		<input type="hidden" name="replyTo" value="@" />
-		<input type="hidden" name="redirectTo" value="https://zsfdw.vercel.app/contact/success" />
+		<input type="hidden" name="redirectTo" value="https://die-welle.site/contact/success" />
 		<input type="submit" value="Submit" />
 	</form>
 </div>
@@ -41,5 +40,5 @@
 		We are only accepting demos in digital form, please send us a link to your mp3, spotify,
 		soundcloud, website etc not the files as an attachment
 	</p>
-	<a href="demos@die-welle.site">demos@die-welle.site</a>
+	<a href="demos@die-welle.site">info@die-welle.site</a>
 </div>
