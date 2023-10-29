@@ -40,7 +40,7 @@
 				{data.artist.Name}
 			</h1>
 			<div
-				class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 justify-between items-center rounded-lg drop-shadow-lg"
+				class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-4 justify-between items-center rounded-lg drop-shadow-lg"
 			>
 				<a href={data.artist.Spotify}
 					><img
