@@ -31,7 +31,7 @@
 				>Releases</a
 			>
 		</li>
-		<li class="w-full h-full">
+		<li class="w-full h-full hidden">
 			<a class="flex justify-center items-center w-full h-full no-underline" href="/events"
 				>Events</a
 			>
@@ -99,7 +99,7 @@
 					on:click={changeNav}>Releases</a
 				>
 			</div>
-			<div class="w-screen flex items-center">
+			<div class="w-screen flex items-center hidden">
 				<a
 					class="flex justify-center items-center w-full h-full p-8 no-underline"
 					href="/events"
