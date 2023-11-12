@@ -38,7 +38,7 @@
 			allowfullscreen=""
 			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 			loading="lazy"
-			class="py-20"
+			class="px-20"
 		/>
 	</div>
 	<div class="flex flex-col items-center">
