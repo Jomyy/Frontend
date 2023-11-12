@@ -27,6 +27,20 @@
 		<div class="h-3" />
 	</div>
 	<div class="flex flex-col items-center">
+		<h2 class="text-white text-2xl">Check out our playlist!</h2>
+		<iframe
+			title="SpotifyPlaylist"
+			style="border-radius:12px"
+			src="https://open.spotify.com/embed/playlist/3iTp2tGt3fLeKBWomYVfXn?utm_source=generator"
+			width="100%"
+			height="352"
+			frameBorder="0"
+			allowfullscreen=""
+			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+			loading="lazy"
+		/>
+	</div>
+	<div class="flex flex-col items-center">
 		<h2 class="text-white text-2xl">Upcoming events</h2>
 		<div />
 	</div>
