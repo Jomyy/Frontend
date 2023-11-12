@@ -28,6 +28,7 @@
 	</div>
 	<div class="flex flex-col items-center">
 		<h2 class="text-white text-2xl">Check out our playlist!</h2>
+		<div class="h-3" />
 		<iframe
 			title="SpotifyPlaylist"
 			style="border-radius:12px"
@@ -41,6 +42,7 @@
 			class="px-20"
 		/>
 	</div>
+	<div class="h-3" />
 	<div class="flex flex-col items-center">
 		<h2 class="text-white text-2xl">Upcoming events</h2>
 		<div />
