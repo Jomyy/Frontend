@@ -32,19 +32,19 @@
 		<iframe
 			title="SpotifyPlaylist"
 			style="border-radius:12px"
-			src="https://open.spotify.com/embed/playlist/3iTp2tGt3fLeKBWomYVfXn?utm_source=generator"
+			src="https://open.spotify.com/embed/playlist/3iTp2tGt3fLeKBWomYVfXn?utm_source=generator&theme=0"
 			width="100%"
 			height="352"
 			frameBorder="0"
 			allowfullscreen=""
 			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 			loading="lazy"
-			class="px-20"
+			class="px-10"
 		/>
 	</div>
 	<div class="h-3" />
 	<div class="flex flex-col items-center">
-		<h2 class="text-white text-2xl">Upcoming events</h2>
+		<!--<h2 class="text-white text-2xl">Upcoming events</h2> -->
 		<div />
 	</div>
 	<div class="flex flex-col items-center text-white p-10">
