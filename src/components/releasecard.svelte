@@ -7,7 +7,6 @@
 	 */
 	export let data;
 </script>
-
 <a href={'/release/' + data.id} class="p-4">
 	<div class="h-max relative">
 		<img

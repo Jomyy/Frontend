@@ -2,11 +2,11 @@
 	export const prerender = true;
 	import { apiURL } from '$lib';
 	/**
-	 * @type {{ collectionId: string; id: string; Profilpicture: string; Name: string;}}
+	 * @type {{ collectionId: string; id: string; Profilpicture: string; Name: string; visible: boolean;}}
 	 */
 	export let data;
 </script>
-
+{#if data.visible}
 <a href={'/artist/' + data.id}>
 	<div class="h-max relative">
 		<img
@@ -21,3 +21,5 @@
 		</div>
 	</div>
 </a>
+{/if}
+
