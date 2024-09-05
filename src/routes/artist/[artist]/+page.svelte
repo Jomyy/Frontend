@@ -15,7 +15,7 @@
 	<title>{data.artist.Name}</title>
 	<meta
 		name="description"
-		content="Homepage of {data.artist.Name} search through linsk and more!"
+		content="Homepage of {data.artist.Name}"
 	/>
 </svelte:head>
 <div
