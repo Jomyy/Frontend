@@ -17,6 +17,8 @@ export async function load({ fetch, params }) {
 
                 return Date.parse(b.Date) - Date.parse(a.Date)
         })
+        
+       
         return { artist, orderedReleases }
 
 }

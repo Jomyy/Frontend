@@ -7,7 +7,7 @@
 	 */
 	export let data;
 </script>
-<a href={'/release/' + data.id} class="p-4">
+<a href={'/release/' + data.id} class="p-4 h-max">
 	<div class="h-max relative">
 		<img
 			src={apiURL + 'files/' + data.collectionId + '/' + data.id + '/' + data.Cover}

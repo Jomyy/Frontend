@@ -2,6 +2,7 @@
 	import '../app.css';
 	import hamburgericon from '$lib/assets/icons/menuopen.svg';
 	import menucloseicon from '$lib/assets/icons/menuclose.svg';
+	import logo from '$lib/assets/brand/logo_01.png'
 	let navOpen = false;
 	function changeNav() {
 		navOpen = !navOpen;
@@ -15,9 +16,14 @@
 	class="bg-[url($lib/assets/optiksw-live/OptikSWLive1.webp)] bg-cover bg-center fixed w-screen h-screen blur-2xl brightness-[22%] -z-30"
 />
 <nav
-	class="bg-black fixed w-screen text-white text-center h-16 m-0 p-0 font-sans z-50 hidden md:flex no-underline font-thin"
+	class="bg-black fixed w-screen text-white text-center h-20 m-0 p-0 font-sans z-50 hidden md:flex no-underline font-thin"
 >
-	<ul class="list-none flex flex-row h-16 w-screen align-middle m-0 p-0 justify-evenly">
+	<ul class="list-none flex flex-row h-20 w-screen align-middle m-0 p-0 justify-evenly">
+		<li class="w-full h-full">
+			<a href="/" class="flex justify-center items-center w-full h-full no-underline p-5 ">
+				<img src={logo} alt="logo" class="h-full w-full invert object-contain">
+			</a>
+		</li>
 		<li class="w-full h-full">
 			<a href="/" class="flex justify-center items-center w-full h-full no-underline">Home</a>
 		</li>
@@ -50,7 +56,9 @@
 		<div
 			class="w-screen fixed flex justify-center items-center h-24 font-bold text-2xl text-center"
 		>
-			Zu Spät Für Die Welle
+		<a href="/" class="flex justify-center items-center w-full h-full no-underline p-5 ">
+			<img src={logo} alt="logo" class="h-full w-full invert object-contain">
+		</a>
 		</div>
 		<div class="flex justify-end h-24 w-full">
 			{#if navOpen}

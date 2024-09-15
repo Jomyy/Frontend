@@ -22,6 +22,7 @@ export default {
         { values: theme('textShadow') }
       )
     }),
+    require("tailwind-gradient-mask-image")
   ],
 }
 

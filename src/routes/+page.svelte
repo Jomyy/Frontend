@@ -20,6 +20,8 @@
 <div class="pt-10">
 	<div class="flex flex-col items-center">
 		<h2 class="text-white text-2xl">Our latest release!</h2>
+		
+		
 		<div class="max-w-xl px-14">
 			<Releasecard data={data.newestRelease} />
 		</div>
