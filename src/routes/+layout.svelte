@@ -3,7 +3,7 @@
 	import hamburgericon from '$lib/assets/icons/menuopen.svg';
 	import menucloseicon from '$lib/assets/icons/menuclose.svg';
 	import logo from '$lib/assets/brand/logo_01.png'
-	let navOpen = false;
+	let navOpen = false
 	function changeNav() {
 		navOpen = !navOpen
 	}
