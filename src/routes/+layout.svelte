@@ -5,7 +5,7 @@
 	import logo from '$lib/assets/brand/logo_01.png'
 	let navOpen = false;
 	function changeNav() {
-		navOpen = !navOpen;
+		navOpen = !navOpen
 	}
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
